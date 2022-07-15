@@ -1,30 +1,26 @@
 {
-	"name": "walther/html2pdf",
+	"name": "walther/t3crawler",
 	"type": "typo3-cms-extension",
-	"description": "A wrapper to let TYPO3 generate PDF files from html pages. Uses wkhtmltopdf, a binary that is using the print functionality of the webkit render engine to create PDFs.",
+	"description": "A wrapper for crawler to let TYPO3 CLI run recursivly through sitemap.xml.",
 	"keywords": [
 		"TYPO3",
 		"extension",
-		"html",
-		"to",
-		"pdf",
-		"html2pdf"
+		"crawler",
+		"sitemap"
 	],
 	"homepage": "https://carstenwalther.de",
 	"license": "GPL-3.0-or-later",
 	"require": {
-		"ext-dom": "*",
-		"ext-simplexml": "*",
-		"typo3/cms-core": "^9.5 || ^10"
+		"typo3/cms-core": "^9.5 || ^11.5"
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "html2pdf"
+			"extension-key": "t3crawler"
 		}
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Walther\\Html2pdf\\" : "Classes/"
+			"Walther\\T3crawler\\" : "Classes/"
 		}
 	},
 	"minimum-stability" : "beta",
