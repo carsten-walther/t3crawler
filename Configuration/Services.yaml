@@ -1,0 +1,8 @@
+services:
+  Walther\T3crawler\Command\CrawlerCommand:
+    tags:
+      - {
+        name: 'console.command',
+        command: 't3crawler:crawl',
+        description: 'Crawl websites with ease.'
+      }
