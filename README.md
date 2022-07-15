@@ -1,4 +1,4 @@
-Html2PDF for TYPO3
+T3crawler for TYPO3
 =============================
 
 [![Issues](https://img.shields.io/github/issues/carsten-walther/t3crawler)](https://img.shields.io/github/issues/carsten-walther/t3crawler)
