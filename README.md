@@ -8,7 +8,7 @@ T3crawler for TYPO3
 [![License](https://img.shields.io/github/license/carsten-walther/t3crawler)](LICENSE.txt)
 [![GitHub All Releases](https://img.shields.io/github/downloads/carsten-walther/t3crawler/total)](https://github.com/carsten-walther/t3crawler/releases/latest)
 
-A wrapper for [![crawler](https://github.com/carsten-walther/crawler)](https://github.com/carsten-walther/crawler) to let TYPO3 CLI run recursively through sitemap.xml.
+A wrapper for [crawler](https://github.com/carsten-walther/crawler) to let TYPO3 CLI run recursively through sitemap.xml.
 
 About the extension
 -------------------
