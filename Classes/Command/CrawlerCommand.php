@@ -50,18 +50,18 @@ class CrawlerCommand extends Command
         if (file_exists($binaryPath . $binary)) {
 
             $options = [
-                $input->getOption('url') ? '-url "' . $input->getOption('url') . '"' : '',
+                $input->getOption('url') ? '-url ' . $input->getOption('url') : '',
                 $input->getOption('count') ? '-count ' . $input->getOption('count') : '',
-                $input->getOption('output') ? '-output "' . $input->getOption('output') . '"' : ''
+                $input->getOption('output') ? '-output ' . $input->getOption('output') : ''
             ];
 
-            $cmd = '"' . $binaryPath . $binary . '" ' . implode(' ', $options);
+            $cmd = escapeshellcmd($binaryPath . $binary . ' ' . implode(' ', $options));
 
-            exec($cmd, $output, $status);
+            exec($cmd, $stdout, $status);
 
-            $output->writeln('Ended with status: ' . $status);
+            $output->writeln('Ended with status ' . $status);
 
-            return 0;
+            return $status;
         }
 
         return 0;
